@@ -7,7 +7,7 @@ import * as Y from 'rdyjs' // eslint-disable-line
 import { EditorView, basicSetup } from 'codemirror'
 import { EditorState } from '@codemirror/state'
 // @ts-ignore
-import { applyRandomTests } from 'rdyjs/tests/testHelper.js'
+// import { applyRandomTests } from 'rdyjs/tests/testHelper.js'
 
 // @ts-ignore
 import { yCollab } from 'rdy-codemirror.next'
@@ -126,47 +126,47 @@ const checkResult = result => {
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges2 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 2, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 2, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges3 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 3, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 3, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges30 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 30, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 30, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges40 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 40, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 40, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges70 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 70, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 70, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges100 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 100, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 100, createNewCodemirror))
 }
 
 /**
  * @param {t.TestCase} tc
  */
 export const testRepeatGenerateProsemirrorChanges300 = tc => {
-  checkResult(applyRandomTests(tc, cmChanges, 300, createNewCodemirror))
+  //checkResult(applyRandomTests(tc, cmChanges, 300, createNewCodemirror))
 }

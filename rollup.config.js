@@ -95,39 +95,4 @@ export default [{
     commonjs(),
     ...minificationPlugins
   ]
-}, {
-  input: './test/index.js',
-  output: {
-    name: 'test',
-    file: 'dist/test.js',
-    format: 'iife',
-    sourcemap: true
-  },
-  plugins: [
-    debugResolve,
-    nodeResolve({
-      mainFields: ['module', 'browser', 'main']
-    }),
-    commonjs()
-  ]
-}, {
-  input: './test/index.js',
-  output: {
-    name: 'test',
-    file: 'dist/test.mjs',
-    format: 'esm',
-    sourcemap: true,
-    paths: path => {
-      if (/^lib0\//.test(path)) {
-        return `lib0/dist${path.slice(4)}.mjs`
-      }
-    }
-  },
-  plugins: [
-    debugResolve,
-    nodeResolve({
-      mainFields: ['module', 'main']
-    })
-  ],
-  external: id => /^(lib0|fs|path|jsdom|isomorphic)/.test(id)
 }]
