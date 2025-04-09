@@ -2,11 +2,11 @@
 import * as cmView from '@codemirror/view'
 
 import * as cmState from '@codemirror/state'
-import * as dom from 'lib0/dom'
-import * as pair from 'lib0/pair'
-import * as math from 'lib0/math'
+import * as dom from 'rdlib0/dom'
+import * as pair from 'rdlib0/pair'
+import * as math from 'rdlib0/math'
 
-import * as Y from 'yjs'
+import * as Y from 'rdyjs'
 import { ySyncFacet } from './y-sync.js'
 
 export const yRemoteSelectionsTheme = cmView.EditorView.baseTheme({

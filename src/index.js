@@ -1,5 +1,5 @@
 
-import * as Y from 'yjs' // eslint-disable-line
+import * as Y from 'rdyjs' // eslint-disable-line
 import * as cmView from '@codemirror/view'
 import * as cmState from '@codemirror/state' // eslint-disable-line
 

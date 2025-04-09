@@ -1,5 +1,5 @@
 
-import * as Y from 'yjs'
+import * as Y from 'rdyjs'
 import * as cmState from '@codemirror/state' // eslint-disable-line
 import * as cmView from '@codemirror/view' // eslint-disable-line
 import { YRange } from './y-range.js'
