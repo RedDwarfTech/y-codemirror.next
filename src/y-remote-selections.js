@@ -5,7 +5,7 @@ import * as cmState from '@codemirror/state'
 import * as dom from 'rdlib0/dom'
 import * as pair from 'rdlib0/pair'
 import * as math from 'rdlib0/math'
-
+// @ts-ignore
 import * as Y from 'rdyjs'
 import { ySyncFacet } from './y-sync.js'
 

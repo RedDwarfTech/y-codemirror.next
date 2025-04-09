@@ -1,4 +1,5 @@
 
+// @ts-ignore
 import * as Y from 'rdyjs' // eslint-disable-line
 import * as cmView from '@codemirror/view'
 import * as cmState from '@codemirror/state' // eslint-disable-line
@@ -17,6 +18,7 @@ export { YRange, yRemoteSelections, yRemoteSelectionsTheme, ySync, ySyncFacet, Y
  * @param {Y.UndoManager | false} [opts.undoManager] Set undoManager to false to disable the undo-redo plugin
  * @return {cmState.Extension}
  */
+// @ts-ignore
 export const yCollab = (ytext, awareness, { undoManager = new Y.UndoManager(ytext) } = {}) => {
   const ySyncConfig = new YSyncConfig(ytext, awareness)
   const plugins = [

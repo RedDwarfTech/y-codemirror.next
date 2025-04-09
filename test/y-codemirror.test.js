@@ -1,15 +1,16 @@
 
-import * as t from 'lib0/testing'
-import * as prng from 'lib0/prng'
-import * as math from 'lib0/math'
-import * as Y from 'yjs' // eslint-disable-line
+import * as t from 'rdlib0/testing'
+import * as prng from 'rdlib0/prng'
+import * as math from 'rdlib0/math'
+// @ts-ignore
+import * as Y from 'rdyjs' // eslint-disable-line
 import { EditorView, basicSetup } from 'codemirror'
 import { EditorState } from '@codemirror/state'
-
-import { applyRandomTests } from 'yjs/tests/testHelper.js'
+// @ts-ignore
+import { applyRandomTests } from 'rdyjs/tests/testHelper.js'
 
 // @ts-ignore
-import { yCollab } from 'y-codemirror.next'
+import { yCollab } from 'rdy-codemirror.next'
 
 /**
  * @param {any} ydoc

@@ -1,16 +1,15 @@
 /* eslint-env browser */
-
-import * as Y from 'yjs'
+// @ts-ignore
+import * as Y from 'rdyjs'
 // @ts-ignore
 import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next'
-import { WebrtcProvider } from 'y-webrtc'
 
 import { EditorView, basicSetup } from 'codemirror'
 import { keymap } from '@codemirror/view'
 import { javascript } from '@codemirror/lang-javascript'
 // import { oneDark } from '@codemirror/next/theme-one-dark'
 
-import * as random from 'lib0/random'
+import * as random from 'rdlib0/random'
 import { EditorState } from '@codemirror/state'
 
 export const usercolors = [
@@ -27,15 +26,14 @@ export const usercolors = [
 export const userColor = usercolors[random.uint32() % usercolors.length]
 
 const ydoc = new Y.Doc()
-// const provider = new WebrtcProvider('codemirror6-demo-room', ydoc)
-const provider = new WebrtcProvider('codemirror6-demo-room-2', ydoc)
+//const provider = new WebrtcProvider('codemirror6-demo-room-2', ydoc)
 const ytext = ydoc.getText('codemirror')
 
-provider.awareness.setLocalStateField('user', {
-  name: 'Anonymous ' + Math.floor(Math.random() * 100),
-  color: userColor.color,
-  colorLight: userColor.light
-})
+//provider.awareness.setLocalStateField('user', {
+//  name: 'Anonymous ' + Math.floor(Math.random() * 100),
+//  color: userColor.color,
+//  colorLight: userColor.light
+// })
 
 const state = EditorState.create({
   doc: ytext.toString(),
@@ -46,7 +44,7 @@ const state = EditorState.create({
     basicSetup,
     javascript(),
     EditorView.lineWrapping,
-    yCollab(ytext, provider.awareness)
+    // yCollab(ytext, provider.awareness)
     // oneDark
   ]
 })

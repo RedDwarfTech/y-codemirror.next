@@ -1,9 +1,9 @@
 
 import * as codemirror from './y-codemirror.test.js'
 
-import { runTests } from 'lib0/testing'
-import { isBrowser, isNode } from 'lib0/environment'
-import * as log from 'lib0/logging'
+import { runTests } from 'rdlib0/testing'
+import { isBrowser, isNode } from 'rdlib0/environment'
+import * as log from 'rdlib0/logging'
 
 if (isBrowser) {
   log.createVConsole(document.body)

@@ -67,14 +67,14 @@ export default [{
   external: id => /^(lib0|yjs|y-protocols|simple-peer)/.test(id),
   output: [{
     name: 'y-codemirror',
-    file: 'dist/y-codemirror.cjs',
-    format: 'cjs',
+    file: 'dist/y-codemirror.mjs',
+    format: 'esm',
     sourcemap: true,
     paths: path => {
       if (/^lib0\//.test(path)) {
-        return `lib0/dist${path.slice(4)}.cjs`
+        return `lib0/dist${path.slice(4)}.mjs`
       } else if (/^y-protocols\//.test(path)) {
-        return `y-protocols/dist${path.slice(11)}.cjs`
+        return `y-protocols/dist${path.slice(11)}.mjs`
       }
       return path
     }
@@ -114,12 +114,12 @@ export default [{
   input: './test/index.js',
   output: {
     name: 'test',
-    file: 'dist/test.cjs',
-    format: 'cjs',
+    file: 'dist/test.mjs',
+    format: 'esm',
     sourcemap: true,
     paths: path => {
       if (/^lib0\//.test(path)) {
-        return `lib0/dist${path.slice(4)}.cjs`
+        return `lib0/dist${path.slice(4)}.mjs`
       }
     }
   },

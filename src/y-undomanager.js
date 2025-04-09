@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as Y from 'rdyjs' // eslint-disable-line
 import * as cmState from '@codemirror/state'
 
@@ -93,8 +94,8 @@ class YUndoManagerPluginValue {
       // store the selection before the change is applied so we can restore it with the undo manager.
       this._beforeChangeSelection = this.syncConf.toYRange(this.view.state.selection.main)
     }
-    this._undoManager.on('stack-item-added', this._onStackItemAdded)
-    this._undoManager.on('stack-item-popped', this._onStackItemPopped)
+    //this._undoManager.on('stack-item-added', this._onStackItemAdded)
+    //this._undoManager.on('stack-item-popped', this._onStackItemPopped)
     this._undoManager.addTrackedOrigin(this.syncConf)
   }
 
@@ -109,8 +110,8 @@ class YUndoManagerPluginValue {
   }
 
   destroy () {
-    this._undoManager.off('stack-item-added', this._onStackItemAdded)
-    this._undoManager.off('stack-item-popped', this._onStackItemPopped)
+    //this._undoManager.off('stack-item-added', this._onStackItemAdded)
+    //this._undoManager.off('stack-item-popped', this._onStackItemPopped)
     this._undoManager.removeTrackedOrigin(this.syncConf)
   }
 }

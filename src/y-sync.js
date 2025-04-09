@@ -1,4 +1,4 @@
-
+// @ts-ignore
 import * as Y from 'rdyjs'
 import * as cmState from '@codemirror/state' // eslint-disable-line
 import * as cmView from '@codemirror/view' // eslint-disable-line

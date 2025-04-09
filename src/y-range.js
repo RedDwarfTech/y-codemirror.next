@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as Y from 'rdyjs'
 
 /**
