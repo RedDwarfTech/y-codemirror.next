@@ -5,6 +5,7 @@
     "allowJs": true,                       /* Allow javascript files to be compiled. */
     "checkJs": true,                       /* Report errors in .js files. */
     "declaration": true,
+    "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./",
     "emitDeclarationOnly": true,
