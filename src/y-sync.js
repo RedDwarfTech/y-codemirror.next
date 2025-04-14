@@ -105,6 +105,7 @@ class YSyncPluginValue {
     this.view = view
     this.conf = view.state.facet(ySyncFacet)
     this._observer = (event, tr) => {
+      console.log("triggering observer");
       if (tr.origin !== this.conf) {
         const delta = event.delta
         const changes = []
